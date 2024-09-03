@@ -1,0 +1,75 @@
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 230px 48px 0px 48px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 24px;
+}
+
+.footer-info p {
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.footer-info a {
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  line-height: 1;
+}
+.footer-info a::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../img/seta-cima.svg');
+  margin-left: 10px;
+  margin-bottom: -2px;
+}
+
+.background-footer {
+  padding: 57px 48px 0px 48px;
+  background: linear-gradient(var(--color-white), var(--color-green));
+  margin-top: 12px;
+}
+
+@media (max-width: 1000px) {
+  .footer-container {
+    padding-top: 180px;
+  }
+}
+@media (max-width: 850px) {
+  .footer-container {
+    padding-top: 150px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-info {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-container {
+    padding: 117px 24px 0px 24px;
+  }
+  .footer {
+    gap: 40px;
+  }
+}

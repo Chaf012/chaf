@@ -1,0 +1,21 @@
+/* Global */
+
+@import './global/global.css';
+@import './global/header.css';
+@import './global/footer.css';
+
+/* Content */
+
+@import './content/content.css';
+
+/* Technologies */
+
+@import './technologies/technologies.css';
+
+/* Projects */
+
+@import './projects/projects.css';
+
+/* Contact */
+
+@import './contact/contact.css';
