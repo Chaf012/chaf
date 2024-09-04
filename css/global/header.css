@@ -1,7 +1,5 @@
 .header {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 40px 48px 0px 48px;
+  padding: 2.5rem 3rem 0 3rem;
   background: linear-gradient(var(--color-green), var(--color-white));
   font-family: var(--font-first);
 }
@@ -14,8 +12,8 @@
 }
 
 .menu-btn {
-  font-size: 18px;
-  letter-spacing: -1px;
+  font-size: 1.125rem;
+  letter-spacing: -1.125px;
   font-weight: 600;
   line-height: 1;
 }
@@ -23,25 +21,35 @@
 .menu-btn::after {
   content: '';
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../../img/Frame\ 3.svg');
+  width: 24px;
+  height: 24px;
+  background: url('../../img/seta-header.svg') no-repeat center;
   margin-left: 12px;
-  margin-bottom: -2px;
+  margin-bottom: -4px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
   .header {
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 2.5rem;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 650px) {
   .header {
-    padding: 50px 24px 0px 24px;
+    padding: 2.5rem 2rem 0 2rem;
   }
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 2.5rem 1.5rem 0 1.5rem;
+  }
+  .menu-btn {
+    font-size: 1rem;
+  }
+
   .menu-btn::after {
-    margin-left: 8px;
+    margin-left: 25px;
   }
 }

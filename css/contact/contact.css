@@ -1,103 +1,107 @@
 .contact-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 138px 48px 0px 48px;
+  padding: 8.625rem 3rem 0px 3rem;
 }
 
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 2px solid #000000;
-  padding-top: 40px;
+  border-top: 1.5px solid #000000;
+  padding-top: 2.5rem;
 }
 
 .contact h1 {
   font-family: var(--font-first);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.3;
-  letter-spacing: -1px;
+  letter-spacing: -0.75px;
 }
 
 .contact-list {
   font-family: var(--font-first);
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 1.3;
   font-weight: 500;
-  letter-spacing: -1px;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .contact-list li {
-  border-bottom: 2px solid #000;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  border-bottom: 1.5px solid #000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: -0.75px;
+}
+
+.contact-list li:last-child {
+  border: none;
 }
 
 .contact li a::after {
   content: '';
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../img/Frame\ 3.svg');
-  margin-bottom: 32px;
+  width: 24px;
+  height: 24px;
+  background: url('../../img/seta-header.svg') no-repeat center;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 1000px) {
-  .contact-container {
-    padding-top: 124px;
-  }
-  .contact h1 {
-    font-size: 28px;
-  }
+@media (max-width: 1110px) {
   .contact-list {
-    font-size: 52px;
-  }
-  .contact-list li {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    font-size: 3.25rem;
   }
 }
 
-@media (max-width: 850px) {
-  .contact-container {
-    padding-top: 100px;
-  }
-  .contact h1 {
-    font-size: 24px;
-  }
+@media (max-width: 920px) {
   .contact-list {
-    font-size: 40px;
-  }
-  .contact-list li {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    font-size: 2.875rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 875px) {
+  .contact-container {
+    padding-top: 3.5rem;
+  }
   .contact {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .contact h1 {
-    font-size: 22px;
+    font-size: 1.5rem;
+  }
+  .contact-list {
+    font-size: 2.375rem;
+  }
+  /* .contact-list li {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  } */
+}
+
+@media (max-width: 650px) {
+  .contact-container {
+    padding: 4rem 2rem 0 2rem;
+  }
+  .contact-list {
+    font-size: 2.25rem;
+  }
+  .contact-list li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 375px) {
   .contact-container {
-    padding: 80px 24px 0px 24px;
+    padding: 2rem 1.5rem 0 1.5rem;
   }
   .contact {
-    padding-top: 20px;
+    padding-top: 1rem;
   }
   .contact h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
   }
-  .contact-list {
-    font-size: 40px;
-  }
-  .contact li a::after {
-    display: none;
+  .contact-list li:last-child {
+    border-bottom: 1.5px solid #000000;
   }
 }

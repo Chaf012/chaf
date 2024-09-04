@@ -1,107 +1,108 @@
 .projects-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 138px 48px 0px 48px;
+  padding: 8.625rem 3rem 0px 3rem;
 }
 
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 2px solid #000000;
-  padding-top: 40px;
+  border-top: 1.5px solid #000000;
+  padding-top: 2.5rem;
 }
 
 .projects h1 {
   font-family: var(--font-first);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.3;
-  letter-spacing: -1px;
+  letter-spacing: -0.75px;
 }
 
 .projects-list {
   font-family: var(--font-first);
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 1.3;
   font-weight: 500;
-  letter-spacing: -1px;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .projects-list li {
-  border-bottom: 2px solid #000;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  border-bottom: 1.5px solid #000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: -0.75px;
 }
 
-.site-btn {
+.site-btn a {
   font-family: var(--font-first);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.3;
-  letter-spacing: -1px;
+  letter-spacing: -0.75px;
 }
 
 .site-btn::after {
   content: '';
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: url('../img/Frame\ 3.svg');
+  width: 24px;
+  height: 24px;
+  background: url('../../img/seta-header.svg') no-repeat center;
   margin-bottom: 12px;
 }
 
-@media (max-width: 1000px) {
-  .projects-container {
-    padding-top: 124px;
-  }
-  .projects h1 {
-    font-size: 28px;
-  }
+@media (max-width: 1110px) {
   .projects-list {
-    font-size: 52px;
-  }
-  .site-btn {
-    font-size: 28px;
+    font-size: 3.25rem;
   }
 }
 
-@media (max-width: 850px) {
-  .projects-container {
-    padding-top: 100px;
-  }
-  .projects h1 {
-    font-size: 24px;
-  }
+@media (max-width: 920px) {
   .projects-list {
-    font-size: 42px;
-  }
-  .site-btn {
-    font-size: 20px;
+    font-size: 2.875rem;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 875px) {
+  .projects-container {
+    padding-top: 6.25rem;
+  }
   .projects {
     grid-template-columns: 1fr;
-    font-size: 22px;
+    margin-top: 2rem;
+    gap: 2rem;
+    /* font-size: 22px; */
   }
-  .site-btn {
+  .projects h1 {
+    font-size: 1.5rem;
+  }
+  .projects-list {
+    font-size: 2.375rem;
+    /* gap: 2rem; */
+  }
+  .projects-list li:last-child {
+    border: none;
+  }
+  .site-btn a {
+    display: none;
+  }
+  .site-btn::after {
     display: none;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 650px) {
   .projects-container {
-    padding: 64px 24px 0px 24px;
+    padding: 4.5rem 2rem 0 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .projects-container {
+    padding: 4rem 1.5rem 0 1.5rem;
   }
   .projects {
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
   .projects h1 {
-    font-size: 20px;
-  }
-  .projects-list {
-    font-size: 40px;
+    font-size: 1.25rem;
+    font-weight: 400;
   }
 }
