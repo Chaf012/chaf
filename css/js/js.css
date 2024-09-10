@@ -1,0 +1,12 @@
+/* AnimaScroll */
+
+.js .js-scroll {
+  opacity: 0;
+  transition: 0.6s;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
